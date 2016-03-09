@@ -1,0 +1,41 @@
+<html ng-app="MeanApp">
+<title>MEAN APP</title>
+  <head>
+      <script src="/lib/angular/angular.min.js"></script>
+      <script src="/lib/angular-route/angular-route.min.js"></script>
+      <script src="/lib/jquery/dist/jquery.min.js"></script>
+      <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+      <script src="app.js"></script>
+  </head>
+<style>
+input.ng-dirty.ng-invalid {
+    background-color: pink;
+}
+</style>
+
+<body ng-controller="mainController">
+
+    <!-- HEADER AND NAVBAR -->
+    <header>
+        <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Mean Stack Application</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right" ng-if="loggedIn">
+                <li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#crud"><i class="fa fa-shield"></i> CRUD</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT AND INJECTED VIEWS -->
+     <div id="main">
+       <div ng-view></div>
+     </div>
+
+</body>
+</html>

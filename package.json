@@ -1,0 +1,34 @@
+{
+  "name": "meanapp",
+  "version": "1.0.0",
+  "description": "This is mean stack app.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "ejs": "^2.4.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.2.3",
+    "consolidate": "^0.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PankajMean/MeanApp.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "Mongo",
+    "Angular"
+  ],
+  "author": "Pankaj Kumar Dewangan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PankajMean/MeanApp/issues"
+  },
+  "homepage": "https://github.com/PankajMean/MeanApp#readme"
+}

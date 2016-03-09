@@ -1,0 +1,44 @@
+<body ng-app="NewsApp" ng-controller="NewsController">
+Hello Node Js <br>
+
+Employee Form
+<form role="form" name="employeeForm" ng-submit="saveEmployee()" novalidate>
+
+    <div class="input-group">
+        <label for="Name"> Name: </label>
+        <input type="text" name="name" class="form-control" ng-model="employee.name" required />
+    </div>
+
+    <div class="form-group">
+        <label for="pwd">Company:</label>
+         <input type="text" name="company" class="form-control" ng-model="employee.company" required />
+    </div>
+
+    <div class="form-group">
+        <label for="pwd">Salary:</label>
+        <input type="number" name="salary" class="form-control" ng-model="employee.salary" number />
+    </div>
+
+    <input type="submit" value="Submit" />
+</form>
+<br>
+
+<table border="2">
+<tr>
+        <th>Name</th>
+        <th>Company</th>
+        <th>Salary</th>
+        <th>Action</th>
+<tr>
+<tr ng-repeat="employee in employeeList">
+        <td>{{employee.name}}</td>
+        <td>{{employee.company}}</td>
+        <td>{{employee.salary}}</td>
+        <td>
+            <input type="button" class="btn btn-info btn-lg" value="Edit" data-ng-click="editEmployee(employee)" />
+            <input type="button" class="btn btn-danger btn-lg" value="Delete" data-ng-click="deleteEmployee(employee)" />
+        </td>
+<tr>
+</table>
+
+</body>

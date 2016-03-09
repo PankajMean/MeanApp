@@ -1,0 +1,30 @@
+{
+  "name": "meanapp",
+  "description": "This is mean stack app.",
+  "main": "server.js",
+  "authors": [
+    "Pankaj Kumar Dewangan"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Node",
+    "Express",
+    "Mongo",
+    "Angular"
+  ],
+  "moduleType": [],
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.1",
+    "angular": "~1.5.0",
+    "bootstrap": "~3.3.6",
+    "angular-route": "~1.5.0"
+  }
+}
